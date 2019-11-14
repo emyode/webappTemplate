@@ -19,12 +19,3 @@ It is important not to use spaces in the names, nor underscores (hyphens are oka
 The Yaml build includes a nuget restore.
 
 This should include everything required to rapidly set up a deployment pipeline for a new project.
-
-## To do 
-@code
-- Add a Database project
-
-
-@deployment
-- Add a process that inspects the web config and ensures the connection string is updated with the proper values
-- Add a process that updates the Database based on the dabase projects DACPAC file
