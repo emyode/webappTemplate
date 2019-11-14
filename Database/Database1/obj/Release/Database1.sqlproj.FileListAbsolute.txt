@@ -1,0 +1,9 @@
+C:\Users\drjplaptop03\source\repos\GitTestProject\Database\Database1\bin\Release\Database1.dacpac
+C:\Users\drjplaptop03\source\repos\GitTestProject\Database\Database1\bin\Release\Database1.dll
+C:\Users\drjplaptop03\source\repos\GitTestProject\Database\Database1\bin\Release\Database1.pdb
+C:\Users\drjplaptop03\source\repos\GitTestProject\Database\Database1\obj\Release\Model.xml
+C:\Users\drjplaptop03\source\repos\GitTestProject\Database\Database1\obj\Release\refactor.xml
+C:\Users\drjplaptop03\source\repos\GitTestProject\Database\Database1\obj\Release\postdeploy.sql
+C:\Users\drjplaptop03\source\repos\GitTestProject\Database\Database1\obj\Release\predeploy.sql
+C:\Users\drjplaptop03\source\repos\GitTestProject\Database\Database1\obj\Release\Database1.dll
+C:\Users\drjplaptop03\source\repos\GitTestProject\Database\Database1\obj\Release\Database1.pdb

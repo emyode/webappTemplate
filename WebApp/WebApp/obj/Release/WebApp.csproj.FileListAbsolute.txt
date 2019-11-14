@@ -1,0 +1,6 @@
+C:\Users\drjplaptop03\source\repos\GitTestProject\WebApp\WebApp\bin\Release\HelloWorld.dll.config
+C:\Users\drjplaptop03\source\repos\GitTestProject\WebApp\WebApp\bin\Release\HelloWorld.dll
+C:\Users\drjplaptop03\source\repos\GitTestProject\WebApp\WebApp\bin\Release\HelloWorld.pdb
+C:\Users\drjplaptop03\source\repos\GitTestProject\WebApp\WebApp\obj\Release\WebApp.csproj.CoreCompileInputs.cache
+C:\Users\drjplaptop03\source\repos\GitTestProject\WebApp\WebApp\obj\Release\HelloWorld.dll
+C:\Users\drjplaptop03\source\repos\GitTestProject\WebApp\WebApp\obj\Release\HelloWorld.pdb
