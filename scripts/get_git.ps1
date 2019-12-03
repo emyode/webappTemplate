@@ -1,8 +1,8 @@
 param(
-[string]$repo="https://github.com/emyode/webappTemplate/archive/master.zip",
-[string]$Remoteorigin="https://yoururl/yourproject/_git/reponame",
-[string]$email = "drjp81@gmail.com",  #####
-[string]$userid="drjp81" #####
+[string]$repo="https://github.com/emyode/InfraTemplate/archive/master.zip",
+[string]$Remoteorigin="https://yoururl/yourproject/_git/reponame", #### critical to automate the upload to your repo 
+[string]$email = "youremail@mail.com",                             #### critical to automate the upload to your repo 
+[string]$userid=youralias_username"                                #### critical to automate the upload to your repo 
 )
 
 
@@ -16,6 +16,7 @@ Invoke-WebRequest -Uri $repo -OutFile $newpath\master.zip
 Expand-Archive $newpath\master.zip $newpath -Force
 
 
+
 cd $newpath\webappTemplate-master
 git init
 git add --all 
@@ -24,7 +25,7 @@ git commit -m "Initial commit"
 git config --global user.name $userid
 git config --global user.email $email
 
-git remote add origin "https://emyodelabs.visualstudio.com/TestProject/_git/TestGarbage"
+git remote add origin $Remoteorigin
 git pull --all --force
 git push --all --force
 
