@@ -1,28 +1,28 @@
 name: 1.0.1$(Rev:.r)
-
 pool:
   name: Hosted VS2017
   demands:
   - msbuild
   - visualstudio
   - vstest
-
 steps:
-- task: CopyFiles@2
+- task: NuGetToolInstaller@0
+  displayName: 'Use NuGet 4.4.1'
   inputs:
-    SourceFolder: 'Scripts'
-    Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)\Scripts'
-
-- task: CopyFiles@2
+    versionSpec: 4.4.1
+- task: NuGetCommand@2
+  displayName: 'NuGet restore'
   inputs:
-    SourceFolder: 'Templates'
-    Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)\Templates'
-
+    restoreSolution: 'WebApp\WebApp\WebApp.csproj'
+- task: VSBuild@1
+  displayName: 'Build solution'
+  inputs:
+    solution: 'WebApp\WebApp\Solution.sln'
+    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactstagingdirectory)\HelloWorld\bin\\" /p:OutputPath="$(build.artifactstagingdirectory)\HelloWorld\bin\\"'
+    platform: 'any cpu'
+    configuration: 'release'
 - task: PublishBuildArtifacts@1
   inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: 'drop'
         publishLocation: 'Container'
-
