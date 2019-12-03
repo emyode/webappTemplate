@@ -16,7 +16,7 @@ Invoke-WebRequest -Uri $repo -OutFile $newpath\master.zip
 Expand-Archive $newpath\master.zip $newpath -Force
 
 
-cd $newpath\InfraTemplate-master
+cd $newpath\webappTemplate-master
 git init
 git add --all 
 git commit -m "Initial commit"
